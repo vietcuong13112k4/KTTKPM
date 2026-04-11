@@ -1,0 +1,93 @@
+{
+  "orders": [
+    {
+      "id": "A1B2C3D4E",
+      "items": [
+        "Truffle Wagyu Burger"
+      ],
+      "customer": "John Doe",
+      "timestamp": "2026-04-11T09:00:00.000Z",
+      "status": "DELIVERED"
+    },
+    {
+      "id": "F5G6H7I8J",
+      "items": [
+        "Classic Cheese Burger"
+      ],
+      "customer": "Jane Smith",
+      "timestamp": "2026-04-11T09:15:00.000Z",
+      "status": "READY_FOR_PICKUP"
+    },
+    {
+      "id": "B0FDUW7AH",
+      "items": [
+        "Truffle Wagyu Burger"
+      ],
+      "customer": "Guest User",
+      "timestamp": "2026-04-11T02:59:03.233Z",
+      "status": "DELIVERED"
+    }
+  ],
+  "eventLogs": [
+    {
+      "event": "delivery.delivered",
+      "data": {
+        "id": "A1B2C3D4E",
+        "status": "DELIVERED"
+      },
+      "timestamp": "2026-04-11T09:10:00.000Z"
+    },
+    {
+      "event": "order.placed",
+      "data": {
+        "id": "B0FDUW7AH",
+        "items": [
+          "Truffle Wagyu Burger"
+        ],
+        "customer": "Guest User",
+        "timestamp": "2026-04-11T02:59:03.233Z",
+        "status": "PENDING"
+      },
+      "timestamp": "2026-04-11T02:59:03.234Z"
+    },
+    {
+      "event": "payment.success",
+      "data": {
+        "id": "B0FDUW7AH",
+        "items": [
+          "Truffle Wagyu Burger"
+        ],
+        "customer": "Guest User",
+        "timestamp": "2026-04-11T02:59:03.233Z",
+        "status": "PAID"
+      },
+      "timestamp": "2026-04-11T02:59:05.262Z"
+    },
+    {
+      "event": "kitchen.completed",
+      "data": {
+        "id": "B0FDUW7AH",
+        "items": [
+          "Truffle Wagyu Burger"
+        ],
+        "customer": "Guest User",
+        "timestamp": "2026-04-11T02:59:03.233Z",
+        "status": "READY_FOR_PICKUP"
+      },
+      "timestamp": "2026-04-11T02:59:09.787Z"
+    },
+    {
+      "event": "delivery.delivered",
+      "data": {
+        "id": "B0FDUW7AH",
+        "items": [
+          "Truffle Wagyu Burger"
+        ],
+        "customer": "Guest User",
+        "timestamp": "2026-04-11T02:59:03.233Z",
+        "status": "DELIVERED"
+      },
+      "timestamp": "2026-04-11T02:59:14.313Z"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "food-orchestration-saga",
+  "version": "1.0.0",
+  "scripts": {
+    "start:be": "cd backend && node server.js",
+    "start:fe": "cd frontend && npm run dev",
+    "dev": "npx concurrently \"npm run start:be\" \"npm run start:fe\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
